@@ -1,0 +1,79 @@
+body {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    width: 350px;
+    background: #16213e;
+    padding: 20px;
+    border: 4px solid #0f3460;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.coin-box {
+    font-size: 1.5rem;
+    color: #e94560;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.slot-frame {
+    background: #000;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #533483;
+}
+
+.reel-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reel {
+    width: 80px;
+    height: 100px;
+    background: #fff;
+    color: #000;
+    font-size: 50px;
+    line-height: 100px;
+    border-radius: 8px;
+    /* 画像を使う場合はここに background-size: cover; 等を追記 */
+}
+
+#spin-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.2rem;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#spin-btn:disabled { background: #555; }
+
+.how-to { font-size: 0.7rem; color: #aaa; margin-top: 15px; }
+
+/* 勝利画面 */
+#win-overlay {
+    position: fixed;
+    top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.85);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 10;
+}
+.win-modal {
+    background: linear-gradient(45deg, #f09, #302);
+    padding: 40px; border-radius: 20px; border: 3px solid #fff;
+}
+.hidden { display: none !important; }

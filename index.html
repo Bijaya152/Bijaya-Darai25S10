@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Slot Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="header">
+            <h2>MONSTER SLOT</h2>
+            <div class="coin-box">COIN: <span id="coin-count">100</span></div>
+        </div>
+
+        <div class="slot-frame">
+            <div class="reel-container">
+                <div id="reel0" class="reel">?</div>
+                <div id="reel1" class="reel">?</div>
+                <div id="reel2" class="reel">?</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="spin-btn">SPIN</button>
+            <p id="msg">1回 10枚消費！</p>
+        </div>
+
+        <div class="how-to">
+            <p>【遊び方】SPINでスタート。3秒後に自動停止します。<br>
+            3つ揃えば配当獲得！ 0枚で終了です。</p>
+        </div>
+    </div>
+
+    <div id="win-overlay" class="hidden">
+        <div class="win-modal">
+            <h1 id="win-name">BIG WIN!</h1>
+            <p id="win-coins"></p>
+            <button onclick="closeWin()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
